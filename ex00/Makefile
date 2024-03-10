@@ -6,7 +6,7 @@
 #    By: dabalm <dabalm@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/08 17:20:22 by dabalm            #+#    #+#              #
-#    Updated: 2024/03/09 18:51:18 by dabalm           ###   ########.fr        #
+#    Updated: 2024/03/10 00:20:05 by dabalm           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,14 +15,18 @@ NAME = clap
 
 C = c++
 
-FLAGS = -Wall -Wextra -Werror -std=c++98
+FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
 DIR_S = ./
 
 DIR_O = obj
 
 SOURCES =	main.cpp \
-			ClapTrap.cpp \
+			Cat.cpp \
+			Dog.cpp \
+			Animal.cpp \
+			WrongAnimal.cpp \
+			WrongCat.cpp
 
 SRCS = $(addprefix $(DIR_S)/,$(SOURCES))
 

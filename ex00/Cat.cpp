@@ -1,36 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dabalm <dabalm@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 19:10:51 by dabalm            #+#    #+#             */
-/*   Updated: 2024/03/10 00:21:57 by dabalm           ###   ########.fr       */
+/*   Updated: 2024/03/10 00:22:12 by dabalm           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "Cat.hpp"
 
-Dog::Dog() {
-    this->type_ = "Dog";
-    std::cout << "Dog constructor called" << std::endl;
+Cat::Cat() {
+    this->type_ = "Cat";
+    std::cout << "Cat constructor called" << std::endl;
 }
 
-Dog::Dog(Dog &dog) : Animal() {
-    *this = dog;
-    std::cout << "Dog copy constructor called" << std::endl;
+Cat::Cat(Cat &cat) : Animal() {
+    *this = cat;
+    std::cout << "Cat copy constructor called" << std::endl;
 }
 
-Dog &Dog::operator=(Dog &dog) {
-    this->type_ = dog.type_;
+Cat &Cat::operator=(Cat &cat) {
+    this->type_ = cat.type_;
     return *this;
 }
 
-void Dog::makeSound() const {
-    std::cout << "Woef" << std::endl;
+void Cat::makeSound() const {
+    std::cout << "miauw" << std::endl;
 }
 
-Dog::~Dog() {
-    std::cout << "Dog destructor called" << std::endl;
+Cat::~Cat() {
+    std::cout << "Cat destructor called" << std::endl;
 }

@@ -6,30 +6,24 @@
 /*   By: dabalm <dabalm@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 19:04:51 by dabalm            #+#    #+#             */
-/*   Updated: 2024/03/09 19:06:57 by dabalm           ###   ########.fr       */
+/*   Updated: 2024/03/09 23:26:18 by dabalm           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DOG_HPP
 # define DOG_HPP
 # include "Animal.hpp"
+# include <string>
 
 class Dog : public Animal
 {
-private:
-    /* data */
 public:
     Dog();
+    Dog(Dog &dog);
     ~Dog();
+    Dog &operator=(Dog &dog);
+    void makeSound() const;
 };
-
-Dog::Dog(/* args */)
-{
-}
-
-Dog::~Dog()
-{
-}
 
 
 #endif
